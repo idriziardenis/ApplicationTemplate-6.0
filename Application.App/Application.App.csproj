@@ -4,6 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>7f2b2736-e66b-4c0a-96c6-b959cd3e88a8</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +15,18 @@
     <Folder Include="Extensions\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Implementations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application.Data\Application.Data.csproj" />
   </ItemGroup>
 
 </Project>
